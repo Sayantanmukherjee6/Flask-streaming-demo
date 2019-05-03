@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script> 
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+
+      <script type="text/javascript" charset="utf-8">
+          var socket = null;
+          var logoffTimer;
+          // time after which page will auto refresh
+          var time=3000 
+          socket=io.connect('http://0.0.0.0:5000')
+            socket.on('connect', function() {
+              
+          socket.on('message',function(data){
+                   for (x in data){
+                   $( "#act_msg" ).append( "<li>"+data[x]+"</li>" );
+                   }
+               mytime(time);
+              });
+
+
+          function mytime(time){
+              clearTimeout(logoffTimer);
+              logoffTimer = setTimeout(function(){
+                  $( "#act_msg" ).empty();
+              }, time);
+          }
+          });
+            
+      </script>
+    </head>
+    <body>
+
+      <div id='act_msg'></div>
+      
+    </body>
+</html>
