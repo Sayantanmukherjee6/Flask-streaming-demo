@@ -1,4 +1,4 @@
 # Flask-streaming-demo
 
-Run app.py
-Run client.py
+* Run app.py
+* Run client.py
