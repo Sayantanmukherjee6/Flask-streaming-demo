@@ -1,2 +1,5 @@
 *.pyc
 *.ipynb
+*_bak.py
+*_js.html
+*_bak.html
