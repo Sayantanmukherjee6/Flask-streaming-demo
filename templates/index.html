@@ -8,8 +8,8 @@
 
       <style type="text/css">
         #mynetwork {
-            width: 600px;
-            height: 400px;
+            width: 1200px;
+            height: 700px;
             border: 1px solid lightgray;
         }
       </style>
@@ -52,7 +52,13 @@
               nodes: nodes,
               edges: edges
           };
-          var options = {};
+          var options = {layout:{randomSeed:1}, 
+                        
+                        layout: {
+                            hierarchical: {
+                                direction: "LR"
+                            }
+                        }};
 
           // initialize your network!
           var network = new vis.Network(container, data, options);
