@@ -8,16 +8,16 @@ socketio =SocketIO(app,namespaces=['/recieve_events'])
 
 
 node_list= [
-		{'id': 0, 'label': 'Node 0','shape': 'box','x':0,'y':10},
-		{'id': 1, 'label': 'Node 1','shape': 'box','x':200,'y':10},
-		{'id': 2, 'label': 'Node 2','shape': 'box','x':180,'y':10},
-		{'id': 3, 'label': 'Node 3','shape': 'box','x':160,'y':10},
-		{'id': 4, 'label': 'Node 4','shape': 'box','x':140,'y':10},
-		{'id': 5, 'label': 'Node 5','shape': 'box','x':120,'y':10},
-		{'id': 6, 'label': 'Node 6','shape': 'box','x':100,'y':10},
-		{'id': 7, 'label': 'Node 7','shape': 'box','x':80,'y':10},
-		{'id': 8, 'label': 'Node 8','shape': 'box','x':60,'y':10},
-		{'id': 9, 'label': 'Node 9','shape': 'box','x':40,'y':10}
+		{'id': 0, 'label': 'Node 0','shape': 'box'},
+		{'id': 1, 'label': 'Node 1','shape': 'box'},
+		{'id': 2, 'label': 'Node 2','shape': 'box'},
+		{'id': 3, 'label': 'Node 3','shape': 'box'},
+		{'id': 4, 'label': 'Node 4','shape': 'box'},
+		{'id': 5, 'label': 'Node 5','shape': 'box'},
+		{'id': 6, 'label': 'Node 6','shape': 'box'},
+		{'id': 7, 'label': 'Node 7','shape': 'box'},
+		{'id': 8, 'label': 'Node 8','shape': 'box'},
+		{'id': 9, 'label': 'Node 9','shape': 'box'}
 	]
 
 def data_process(data):
